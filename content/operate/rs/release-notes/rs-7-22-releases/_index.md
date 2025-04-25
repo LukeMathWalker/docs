@@ -113,7 +113,11 @@ The following table provides a snapshot of supported platforms as of this Redis 
 
 - RS156570: Redis Enterprise Software version 7.22.0 can experience a significant performance impact when using search indexes with vector fields of type HNSW. This issue is characterized by elevated CPU usage, even during idle periods, due to periodic database information collection for metrics and monitoring. This behavior can also affect other database operations. For example, the `FT.INFO` command can become long-running on such indexes.
 
+    This issue was fixed in [Redis Enterprise Software version 7.22.0-34]({{<relref "/operate/rs/release-notes/rs-7-22-releases/rs-7-22-0-34">}}).
+
 - RS156391: The `job_scheduler`'s memory usage can increase significantly when the diagnostic logging service is enabled.
+
+    This issue was fixed in [Redis Enterprise Software version 7.22.0-34]({{<relref "/operate/rs/release-notes/rs-7-22-releases/rs-7-22-0-34">}}).
 
 ## Known limitations
 
